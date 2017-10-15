@@ -1,0 +1,559 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FA36502A1F6BE83800DA2E2C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3650291F6BE83800DA2E2C /* AppDelegate.swift */; };
+		FA36502C1F6BE83800DA2E2C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA36502B1F6BE83800DA2E2C /* ViewController.swift */; };
+		FA36502F1F6BE83800DA2E2C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA36502D1F6BE83800DA2E2C /* Main.storyboard */; };
+		FA3650311F6BE83800DA2E2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA3650301F6BE83800DA2E2C /* Assets.xcassets */; };
+		FA3650341F6BE83800DA2E2C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA3650321F6BE83800DA2E2C /* LaunchScreen.storyboard */; };
+		FA36503F1F6BE83800DA2E2C /* AccelerometerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA36503E1F6BE83800DA2E2C /* AccelerometerTests.swift */; };
+		FA36504A1F6BE83900DA2E2C /* AccelerometerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3650491F6BE83900DA2E2C /* AccelerometerUITests.swift */; };
+		FA3650591F6BE8F800DA2E2C /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA3650581F6BE8F800DA2E2C /* CoreMotion.framework */; };
+		FAF95A491F730B52000EBD4D /* coremotion.png in Resources */ = {isa = PBXBuildFile; fileRef = FAF95A481F730B52000EBD4D /* coremotion.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FA36503B1F6BE83800DA2E2C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA36501E1F6BE83800DA2E2C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FA3650251F6BE83800DA2E2C;
+			remoteInfo = Accelerometer;
+		};
+		FA3650461F6BE83900DA2E2C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA36501E1F6BE83800DA2E2C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FA3650251F6BE83800DA2E2C;
+			remoteInfo = Accelerometer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FA3650261F6BE83800DA2E2C /* AccGyroTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AccGyroTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA3650291F6BE83800DA2E2C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FA36502B1F6BE83800DA2E2C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FA36502E1F6BE83800DA2E2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FA3650301F6BE83800DA2E2C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FA3650331F6BE83800DA2E2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FA3650351F6BE83800DA2E2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA36503A1F6BE83800DA2E2C /* AccGyroTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AccGyroTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA36503E1F6BE83800DA2E2C /* AccelerometerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccelerometerTests.swift; sourceTree = "<group>"; };
+		FA3650401F6BE83900DA2E2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA3650451F6BE83900DA2E2C /* AccGyroTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AccGyroTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA3650491F6BE83900DA2E2C /* AccelerometerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccelerometerUITests.swift; sourceTree = "<group>"; };
+		FA36504B1F6BE83900DA2E2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA3650581F6BE8F800DA2E2C /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		FAF95A481F730B52000EBD4D /* coremotion.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = coremotion.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FA3650231F6BE83800DA2E2C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA3650591F6BE8F800DA2E2C /* CoreMotion.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA3650371F6BE83800DA2E2C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA3650421F6BE83900DA2E2C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FA36501D1F6BE83800DA2E2C = {
+			isa = PBXGroup;
+			children = (
+				FA3650281F6BE83800DA2E2C /* AccGyroTest */,
+				FA36503D1F6BE83800DA2E2C /* AccelerometerTests */,
+				FA3650481F6BE83900DA2E2C /* AccelerometerUITests */,
+				FA3650271F6BE83800DA2E2C /* Products */,
+				FA3650571F6BE8F800DA2E2C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FA3650271F6BE83800DA2E2C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FA3650261F6BE83800DA2E2C /* AccGyroTest.app */,
+				FA36503A1F6BE83800DA2E2C /* AccGyroTestTests.xctest */,
+				FA3650451F6BE83900DA2E2C /* AccGyroTestUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FA3650281F6BE83800DA2E2C /* AccGyroTest */ = {
+			isa = PBXGroup;
+			children = (
+				FAF95A481F730B52000EBD4D /* coremotion.png */,
+				FA3650291F6BE83800DA2E2C /* AppDelegate.swift */,
+				FA36502B1F6BE83800DA2E2C /* ViewController.swift */,
+				FA36502D1F6BE83800DA2E2C /* Main.storyboard */,
+				FA3650301F6BE83800DA2E2C /* Assets.xcassets */,
+				FA3650321F6BE83800DA2E2C /* LaunchScreen.storyboard */,
+				FA3650351F6BE83800DA2E2C /* Info.plist */,
+			);
+			name = AccGyroTest;
+			path = Accelerometer;
+			sourceTree = "<group>";
+		};
+		FA36503D1F6BE83800DA2E2C /* AccelerometerTests */ = {
+			isa = PBXGroup;
+			children = (
+				FA36503E1F6BE83800DA2E2C /* AccelerometerTests.swift */,
+				FA3650401F6BE83900DA2E2C /* Info.plist */,
+			);
+			path = AccelerometerTests;
+			sourceTree = "<group>";
+		};
+		FA3650481F6BE83900DA2E2C /* AccelerometerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FA3650491F6BE83900DA2E2C /* AccelerometerUITests.swift */,
+				FA36504B1F6BE83900DA2E2C /* Info.plist */,
+			);
+			path = AccelerometerUITests;
+			sourceTree = "<group>";
+		};
+		FA3650571F6BE8F800DA2E2C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FA3650581F6BE8F800DA2E2C /* CoreMotion.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FA3650251F6BE83800DA2E2C /* AccGyroTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA36504E1F6BE83900DA2E2C /* Build configuration list for PBXNativeTarget "AccGyroTest" */;
+			buildPhases = (
+				FA3650221F6BE83800DA2E2C /* Sources */,
+				FA3650231F6BE83800DA2E2C /* Frameworks */,
+				FA3650241F6BE83800DA2E2C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AccGyroTest;
+			productName = Accelerometer;
+			productReference = FA3650261F6BE83800DA2E2C /* AccGyroTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FA3650391F6BE83800DA2E2C /* AccGyroTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA3650511F6BE83900DA2E2C /* Build configuration list for PBXNativeTarget "AccGyroTestTests" */;
+			buildPhases = (
+				FA3650361F6BE83800DA2E2C /* Sources */,
+				FA3650371F6BE83800DA2E2C /* Frameworks */,
+				FA3650381F6BE83800DA2E2C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FA36503C1F6BE83800DA2E2C /* PBXTargetDependency */,
+			);
+			name = AccGyroTestTests;
+			productName = AccelerometerTests;
+			productReference = FA36503A1F6BE83800DA2E2C /* AccGyroTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FA3650441F6BE83900DA2E2C /* AccGyroTestUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA3650541F6BE83900DA2E2C /* Build configuration list for PBXNativeTarget "AccGyroTestUITests" */;
+			buildPhases = (
+				FA3650411F6BE83900DA2E2C /* Sources */,
+				FA3650421F6BE83900DA2E2C /* Frameworks */,
+				FA3650431F6BE83900DA2E2C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FA3650471F6BE83900DA2E2C /* PBXTargetDependency */,
+			);
+			name = AccGyroTestUITests;
+			productName = AccelerometerUITests;
+			productReference = FA3650451F6BE83900DA2E2C /* AccGyroTestUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FA36501E1F6BE83800DA2E2C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = MacBook;
+				TargetAttributes = {
+					FA3650251F6BE83800DA2E2C = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 522BBFK7BL;
+						ProvisioningStyle = Automatic;
+					};
+					FA3650391F6BE83800DA2E2C = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 522BBFK7BL;
+						ProvisioningStyle = Automatic;
+						TestTargetID = FA3650251F6BE83800DA2E2C;
+					};
+					FA3650441F6BE83900DA2E2C = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 522BBFK7BL;
+						ProvisioningStyle = Automatic;
+						TestTargetID = FA3650251F6BE83800DA2E2C;
+					};
+				};
+			};
+			buildConfigurationList = FA3650211F6BE83800DA2E2C /* Build configuration list for PBXProject "AccGyroTest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FA36501D1F6BE83800DA2E2C;
+			productRefGroup = FA3650271F6BE83800DA2E2C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FA3650251F6BE83800DA2E2C /* AccGyroTest */,
+				FA3650391F6BE83800DA2E2C /* AccGyroTestTests */,
+				FA3650441F6BE83900DA2E2C /* AccGyroTestUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FA3650241F6BE83800DA2E2C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA3650341F6BE83800DA2E2C /* LaunchScreen.storyboard in Resources */,
+				FA3650311F6BE83800DA2E2C /* Assets.xcassets in Resources */,
+				FAF95A491F730B52000EBD4D /* coremotion.png in Resources */,
+				FA36502F1F6BE83800DA2E2C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA3650381F6BE83800DA2E2C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA3650431F6BE83900DA2E2C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FA3650221F6BE83800DA2E2C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA36502C1F6BE83800DA2E2C /* ViewController.swift in Sources */,
+				FA36502A1F6BE83800DA2E2C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA3650361F6BE83800DA2E2C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA36503F1F6BE83800DA2E2C /* AccelerometerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA3650411F6BE83900DA2E2C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA36504A1F6BE83900DA2E2C /* AccelerometerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FA36503C1F6BE83800DA2E2C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FA3650251F6BE83800DA2E2C /* AccGyroTest */;
+			targetProxy = FA36503B1F6BE83800DA2E2C /* PBXContainerItemProxy */;
+		};
+		FA3650471F6BE83900DA2E2C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FA3650251F6BE83800DA2E2C /* AccGyroTest */;
+			targetProxy = FA3650461F6BE83900DA2E2C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FA36502D1F6BE83800DA2E2C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA36502E1F6BE83800DA2E2C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FA3650321F6BE83800DA2E2C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA3650331F6BE83800DA2E2C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FA36504C1F6BE83900DA2E2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FA36504D1F6BE83900DA2E2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FA36504F1F6BE83900DA2E2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 522BBFK7BL;
+				INFOPLIST_FILE = Accelerometer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Fra-Uas.AuthadaTest";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		FA3650501F6BE83900DA2E2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 522BBFK7BL;
+				INFOPLIST_FILE = Accelerometer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Fra-Uas.AuthadaTest";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		FA3650521F6BE83900DA2E2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 522BBFK7BL;
+				INFOPLIST_FILE = AccelerometerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Fra-Uas.AccelerometerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AccGyroTest.app/AccGyroTest";
+			};
+			name = Debug;
+		};
+		FA3650531F6BE83900DA2E2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 522BBFK7BL;
+				INFOPLIST_FILE = AccelerometerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Fra-Uas.AccelerometerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AccGyroTest.app/AccGyroTest";
+			};
+			name = Release;
+		};
+		FA3650551F6BE83900DA2E2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 522BBFK7BL;
+				INFOPLIST_FILE = AccelerometerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Fra-Uas.AccelerometerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Accelerometer;
+			};
+			name = Debug;
+		};
+		FA3650561F6BE83900DA2E2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 522BBFK7BL;
+				INFOPLIST_FILE = AccelerometerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Fra-Uas.AccelerometerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Accelerometer;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FA3650211F6BE83800DA2E2C /* Build configuration list for PBXProject "AccGyroTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA36504C1F6BE83900DA2E2C /* Debug */,
+				FA36504D1F6BE83900DA2E2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA36504E1F6BE83900DA2E2C /* Build configuration list for PBXNativeTarget "AccGyroTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA36504F1F6BE83900DA2E2C /* Debug */,
+				FA3650501F6BE83900DA2E2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA3650511F6BE83900DA2E2C /* Build configuration list for PBXNativeTarget "AccGyroTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA3650521F6BE83900DA2E2C /* Debug */,
+				FA3650531F6BE83900DA2E2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA3650541F6BE83900DA2E2C /* Build configuration list for PBXNativeTarget "AccGyroTestUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA3650551F6BE83900DA2E2C /* Debug */,
+				FA3650561F6BE83900DA2E2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FA36501E1F6BE83800DA2E2C /* Project object */;
+}
